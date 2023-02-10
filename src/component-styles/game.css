@@ -1,0 +1,178 @@
+.game {
+  background: rgb(26,233,233);
+  background: url("https://www.transparenttextures.com/patterns/bright-squares.png"), radial-gradient(circle, rgba(26,233,233,1) 0%, rgba(162,86,100,1) 100%);
+  font-family: 'Fira Sans', sans-serif;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.battlefield {
+  display: flex;
+  --lane-border:  #1AE9E9;
+  --lanebg: transparent;
+  --lane-bg-img: url("https://www.transparenttextures.com/patterns/always-grey.png");
+
+}
+
+.player-zone {
+  display: flex;
+  flex-direction: row;
+  width: 70em;
+}
+/* add or subtract to width of player zone to change the amount of cards in hand before wrapping. */
+
+.hand {
+  border: .3em dotted #ffffff;
+}
+
+.opp-card-zone {
+  border-radius: 3em;
+}
+.card-zone {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 3em;
+  height: 24em;
+  width: 18em;
+  
+  
+}
+
+.drop-card-zone {
+  border-radius: 3em;
+  
+  
+}
+
+.hand {
+  display: flex;
+  background-color: transparent;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pusheen-deck {
+  --lane-bg-color: pink;
+}
+
+.horror-deck {
+  --lane-bg-color: red;
+}
+
+.goldengirls-deck {
+  --lane-bg-color: yellow;
+}
+
+.lane {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid var(--lane-border);
+  border-radius: 3em;
+  background-color: var(--lane-bg-color);
+  background-image: var(--lane-bg-img);
+  width: 20em;
+  margin: .5em;
+  opacity: .9;
+}
+
+.player-lane-power {
+  height: 3em;
+  width: 3em;
+  background-color: goldenrod;
+  text-align: center;
+  font-weight: bolder;
+  border-radius: 50%;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  border-style: outset;
+  border-color: cornsilk;
+}
+
+.location {
+  height: 2em;
+  background-color: #A25664;
+  border: .25em outset #884753;
+  margin: .5em;
+}
+
+
+.deck {
+  display: flex;
+  height: 10em;
+  width: 7.5em;
+  margin: 1em;
+  cursor: pointer;
+  justify-self: left;
+  border-style: outset;
+  border-color: #900000;
+  
+}
+
+.opp-pz {
+  display: none
+}
+
+.current-energy {
+  background-color: #1AE9E9;
+  height: 3em;
+  width: 3em;
+  margin: 1em;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bolder;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  border-style: outset;
+  border-color: cyan;
+}
+
+.current-turn {
+  background-color: rgb(59, 214, 35);
+  height: 3em;
+  width: 3em;
+  margin: 1em;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bolder;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  border-style: outset;
+  border-color: chartreuse;
+}
+
+.player-data-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 60em;
+}
+
+.avatar img {
+  border-radius: 50%;
+  border-style: groove;
+  height: 6em;
+  width: 6em;
+  object-fit: contain;
+}
+
+.opp-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 4em;
+}
+
+.player-avatar {
+  display: flex;
+  align-items: end;
+  flex-direction: column-reverse;
+  margin-bottom: 4em;
+}
